@@ -19,13 +19,14 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(123, 123, 123);
+    background: linear-gradient(to bottom, #474747, #282828)
 }
 
 .main{
-    height: 35em;
-    width: 25em;
-    background-color: red;
+    height: 36em;
+    width: 26em;
+    background: linear-gradient(to bottom right, #00ff9d, #46b1b1, #4589a9, #2d5190);
+    border-radius: 5%;
 }
 
 .searching{
@@ -67,6 +68,11 @@ body{
     border: none;
 }
 
+.button-search:hover{
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+}
+
 .weather-icons{
     display: flex;
     justify-content: center;
@@ -86,9 +92,6 @@ body{
     color: white;
 }
 
-.c-size{
-    font-size: 70px;
-}
 
 .weather-city{
     display: flex;
@@ -117,13 +120,13 @@ body{
 
 .bottom-text{
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin-top: 0.2em;
 }
 
-.bottom-procent{
+.humidity-procent, .wind-procent{
     width: 100%;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 .details-icon{

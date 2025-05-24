@@ -10,20 +10,20 @@
     <div class="main">
         <div class="searching">
             <div class="search-input">
-                <input type="text" class="input" placeholder="enter city name">
+                <input type="text" class="input" id="input-search" placeholder="enter city name" autocomplete="off">
             </div>
             <div class="search-button">
-                <button class="button-search"><img src="search.svg"></button>
+                <button class="button-search" onclick="checkWeather(searchBox.value)"><img src="search.svg"></button>
             </div>
         </div>
-        <div class="weather-icons">
-                <img src="rain.png" class="icons">
+        <div class="weather-icons" id="pic">
+                <img src="clear.png" class="icons">
         </div>
-        <div class="weather-temp">
-            22°<span class="c-size">C</span>
+        <div class="weather-temp" id="error">
+            --°c
         </div>
-        <div class="weather-city">
-            New York
+        <div class="weather-city" id="errorek">
+            ------
         </div>
         <div class="weather-info">
             <div class="details">
@@ -31,7 +31,7 @@
                     <img src="humidity.png" class="bottom-icon">
                 </div>
                 <div class="details-info">
-                    <div class="bottom-procent">50%</div>
+                    <div class="humidity-procent" id="error1">--%</div>
                     <div class="bottom-text">Humidity</div>
                 </div>
             </div>
@@ -40,11 +40,12 @@
                     <img src="wind.png" class="bottom-icon">
                 </div>
                 <div class="details-info">
-                    <div class="bottom-procent">15km/h</div>
+                    <div class="wind-procent" id="error2">--km/h</div>
                     <div class="bottom-text">Wind Speed</div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html> 
